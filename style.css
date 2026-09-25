@@ -1,0 +1,156 @@
+  body {
+      font: timesnewroman;
+      margin: 0;
+      padding: 0;
+      background: #fdf6f6;
+      /* Light mode background */
+      color: #444;
+      transition: all 0.3s ease;
+    }
+
+    /* === Dark Mode === */
+    body.dark {
+      background: #1e1e1e;
+      color: #e8e8e8;
+    }
+
+    /* === Header === */
+    header {
+      background: #a8dadc;
+      /* Light mode pastel teal */
+      padding: 2rem;
+      color: #fff;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    body.dark header {
+      background: #2d2d2d;
+    }
+
+    .profile-header {
+      display: flex;
+      gap: 20px;
+    }
+
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 0;
+      /* Square photo */
+      border: 4px solid #fff;
+    }
+
+    .profile-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .profile-header p {
+      margin: 5px 0 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* === Dark Mode Toggle Button === */
+    .toggle-btn {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      background: #fff;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    body.dark .toggle-btn {
+      background: #444;
+      color: #fff;
+    }
+
+    /* === Container === */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: #f8edeb;
+      /* Light pastel */
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s;
+    }
+
+    body.dark section {
+      background: #2d2d2d;
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.05);
+    }
+
+    section h2 {
+      color: #6d6875;
+      margin-bottom: 1rem;
+    }
+
+    body.dark section h2 {
+      color: #f1faee;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* === Resume Button === */
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #bde0fe;
+      color: #444;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .resume-btn hover {
+      background: #89c2d9;
+    }
+
+    body.dark .resume-btn {
+      background: #444;
+      color: #fff;
+    }
+
+    /* === Footer === */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e8e8e4;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      margin-top: 2rem;
+      transition: background 0.3s;
+    }
+
+    body.dark footer {
+      background: #2d2d2d;
+    }
+  
